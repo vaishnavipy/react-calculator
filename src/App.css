@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+body{
+  background-color: #C2C2D6;
+}
+
+.main-container{
+  width:25vw;
+  height:60vh;
+  background-color: black;
+  margin:auto;
+  margin-top:20vh;
+  display:flex;
+  flex-direction: column;
+  color:white;
+ 
+}
+
+.display-container{
+  flex:20%;
+}
+
+
+
+.clear { grid-area: clear; }
+.divide { grid-area: divide ; }
+.multiply { grid-area: multiply; }
+.seven { grid-area: seven ; }
+.eight { grid-area: eight ; }
+.nine { grid-area: nine; }
+.sub { grid-area: sub ; }
+.four { grid-area: four; }
+.five { grid-area: five ; }
+.six { grid-area: six; }
+.plus { grid-area: plus; }
+.one { grid-area: one; }
+.two { grid-area: two; }
+.three { grid-area: three ; }
+.equal { grid-area: equal; }
+.zero { grid-area: zero ; }
+.dot { grid-area:dot; }
+
+
+
+
+
+.calculator-container{
+  flex:80%;
+  display: grid;
+  grid-template-areas:
+    'clear clear divide multiply'
+    'seven eight nine sub'
+    'four five six plus'
+    'one two three equal'
+    'zero zero dot equal ';
+   
+    background-color: #4D4D4D;
+  
+  text-align: center;
+  margin:5px;
+  cursor: pointer;
+  
+  
+  
+}
+.item{
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 19px;
+  font-weight: 900;
+  border-right:0.1px solid black;
+  border-bottom:0.1px solid black;
+  
+  text-align:center;
+  padding:20px;
+ 
+}
+.equal{
+  padding-top:50px;
+  background-color: #024466;
+ 
+}
+
+.clear{
+  background-color: #AC3938;
+}
+.add,.sub,.multiply,.divide{
+  background-color: #666666;
+}
+
+.item:hover{
+  color:black;
+  border: 1px solid white;
+  
+}
+
+
+
+
+
+
